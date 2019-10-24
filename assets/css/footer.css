@@ -93,3 +93,22 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+.colone_menu_footer{
+	padding-left: 200px;
+	text-decoration: none;
+}
+.colone_menu_footer_liste{
+	text-decoration: none;
+	color: white;
+	padding-top: 50px;
+	font-size: 25px;
+	}
+.mentions_legales{
+	display: flex;
+	flex-direction: row;
+	background-color: grey;
+}
+.mentions_legales_lignes{
+	text-decoration: none;
+	color: white;
+}
