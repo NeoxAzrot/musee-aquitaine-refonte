@@ -1,0 +1,56 @@
+.footer {
+
+}
+.footer_horaires {
+	background-color: #EBCBAE;
+	
+}
+.footer_horaires_titres{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 35px;
+	font-color:#0E0E0E;
+	
+}
+/*.footer_h2{
+	text-decoration: underline; 
+	text-underline-position: under right ;
+
+}
+.parent_souligne{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.souligne{
+	
+}*/
+
+.border{
+	border: solid 2px ;
+	border-radius: 50%;
+}
+.pied_de_page {
+	background-color: #0E0E0E;
+
+}
+.pied_de_page_logo{
+	margin-top: 70px;
+	padding-left: 101px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.icones_pied_de_page{
+	color: white;
+	margin-top: 80px;
+	padding-right: 101px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 40px;
+
+
+
+}
