@@ -1,0 +1,52 @@
+#page_accueil header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Cormorant SC', serif;
+    margin-right: 101px;
+}
+
+#page_accueil header nav ul a
+{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#page_accueil
+{
+    background-color: coral;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page_accueil header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#page_accueil header nav
+{
+    width: 100%;
+    margin-left: 80px;
+}
+
+#page_accueil header img{
+    margin-left: 101px;
+    width: 272px;
+    height: auto;
+}
+
+#page_accueil header nav ul span
+{
+    width: 100px;
+    height: 10px;
+    background-color: #f9f9f9;
+    color: blue;
+}
