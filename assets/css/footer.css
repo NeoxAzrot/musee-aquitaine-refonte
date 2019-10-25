@@ -32,30 +32,28 @@
 	padding: 20px;
 	
 }
+.lien_bouton_2{
+	text-decoration:none;
+	color: #F9F9F9;
+	display: inline;
+	font-size: 30px;
+	border:2px solid #F9F9F9;
+	padding: 20px;
+}
+
 .border_bouton{
 		padding-left: 1250px;
 		margin-bottom: 120px;
 }
-
-/*.footer_h2{
-	text-decoration: underline; 
-	text-underline-position: under right ;
-
+.fermer{
+	color:red;
 }
-.parent_souligne{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.souligne{
-	
-}*/
 .liens{
 	text-decoration-line: none;
-	color: white;
+	color: #F9F9F9;
 }
 .icone{
-	color: white;
+	color: #F9F9F9;
 	text-decoration: none;
 	text-align: center;
 }
@@ -67,12 +65,13 @@
 .border{
 	border: solid 2px;
 	border-radius: 50%;
-	color: white;
+	color: #F9F9F9;
 	list-style: none;
 	font-size: 30px;
 	width: 30px;
 	height: 30px;
 	padding: 10px;
+	margin-right: 40px;
 }
 .pied_de_page {
 	background-color: #0E0E0E;
@@ -86,29 +85,24 @@
 	justify-content: space-between;
 }
 .icones_pied_de_page{
-	color: white;
+	color: #F9F9F9;
 	margin-top: 80px;
 	padding-right: 101px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-.colone_menu_footer{
+.liste{
+	list-style: none;
 	padding-left: 200px;
-	text-decoration: none;
+	margin-top: 40px;
+	
 }
-.colone_menu_footer_liste{
+.liste_ligne{
+	margin-top: 45px;
+}
+.liste_lien{
 	text-decoration: none;
-	color: white;
-	padding-top: 50px;
+	color: #F9F9F9;
 	font-size: 25px;
-	}
-.mentions_legales{
-	display: flex;
-	flex-direction: row;
-	background-color: grey;
-}
-.mentions_legales_lignes{
-	text-decoration: none;
-	color: white;
 }
