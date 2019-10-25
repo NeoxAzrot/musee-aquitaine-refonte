@@ -12,11 +12,11 @@
 	font-size: 35px;
 	color:#0E0E0E;
 }
-.pied_de_page{
+.footer_pied_de_page{
 	width: 100vw;
 	height: 100vh;
 }
-.text_horaire{
+.footer_text_horaire{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -24,10 +24,10 @@
 	margin-bottom: 0px;
 	margin-top: 30px;
 	font-size: 30px;
-	font-color: #0E0E0E;
+	text-decoration-color: #0E0E0E;
 }
 
-.lien_bouton{
+.footer_lien_bouton{
 	text-decoration:none;
 	color: #0E0E0E;
 	display: inline;
@@ -36,7 +36,7 @@
 	padding: 20px;
 	
 }
-.lien_bouton_2{
+.footer_lien_bouton_2{
 	text-decoration:none;
 	color: #F9F9F9;
 	display: inline;
@@ -44,33 +44,36 @@
 	border:2px solid #75B2B5;
 	padding: 20px;
 }
+.footer_bouton_1_decal{
+	padding-left: 1200px;
+}
 
-.border_bouton{
+.footer_border_bouton{
 		padding-left: 50px;
 
 }
-.bouton_1{
+.footer_bouton_1{
 	padding-left: 1100px;
 }
-.fermer{
+.footer_fermer{
 	color:#EE3831;
 }
-.liens{
+.footer_liens{
 	text-decoration-line: none;
 	color: #F9F9F9;
 
 }
-.icone{
+.footer_icone{
 	color: #F9F9F9;
 	text-decoration: none;
 	text-align: center;
 }
-.liste_icone{
+.footer_liste_icone{
 	display: flex;
 	flex-direction: row; 
 }
 
-.border{
+.footer_border{
 	border: solid 2px;
 	border-radius: 50%;
 	color: #F9F9F9;
@@ -81,18 +84,18 @@
 	padding: 10px;
 	margin-right: 40px;
 }
-.pied_de_page {
+.footer_pied_de_page {
 	background-color: #0E0E0E;
 
 }
-.pied_de_page_logo{
+.footer_pied_de_page_logo{
 	margin-top: 70px;
 	padding-left: 101px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-.icones_pied_de_page{
+.footer_icones_pied_de_page{
 	color: #F9F9F9;
 	margin-top: 80px;
 	padding-right: 101px;
@@ -101,55 +104,60 @@
 	justify-content: space-between;
 }
 
-.liste{
+.footer_liste{
 	list-style: none;
 	padding-left: 200px;
 	margin-top: 40px;
 	
 }
 
-.liste_ligne{
+.footer_liste_ligne{
 	margin-top: 50px;
 }
 
-.liste_lien{
+.footer_liste_lien{
 	text-decoration: none;
 	color: #F9F9F9;
 	font-size: 35px;
 }
 
-.contact{
+.footer_contact{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding-bottom: 70px;
 }
 
-.contact_titre{
+.footer_contact_titre{
 	color: #F9F9F9;
 	margin: 0px;
 	font-size: 35px;
 }
 
-.bouton{
+.footer_bouton{
 	align-content: center;
 }
 
-.mentions_legales{
+.footer_mentions_legales{
 	background-color: #1E1E1E;
 	display: flex;
 	align-content: flex-end;
 }
 
-.mentions_legales_liste{
+.footer_mentions_legales_liste{
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 	color: #F9F9F9;
 }
 
-.mentions_legales_lignes{
-
-	margin: 50px;
+.footer_mentions_legales_lignes{
+	margin: 30px;
 	margin-left: 20px;
 	font-size: 20px;
+	display: block;
+	align-content: center;
+}
+.footer_footer_decal{
+	padding-left: 400px;
 }
