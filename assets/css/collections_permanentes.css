@@ -1,0 +1,55 @@
+.collec_perm h2{
+  font-family: 'Cormorant SC', serif;
+  font-size: 70px;
+  color: #F9F9F9;
+  font-weight: 400;
+  text-align: center;
+}
+.collec_perm h2 span{
+  width: 100%;
+  height: 2px;
+  background-color: #f9f9f9;
+  display: block;
+  margin-top: 8px;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+body{
+  background-color: #1E1E1E;
+}
+.collec_perm p{
+  font-family: 'Montserrat', sans-serif;
+  color: #F9F9F9;
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.prehistoire{
+  width: 20%;
+    height: 15%;
+
+}
+
+.antiquite{
+  width: 20%;
+  height: 15%;
+}
+
+.XVIIIe{
+  width: 20%;
+  height: 5%;
+}
+
+.XXIe{
+  width: 20%;
+  height: 15%;
+}
+
+.images_diff_collec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
