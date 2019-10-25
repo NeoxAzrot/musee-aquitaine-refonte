@@ -52,7 +52,7 @@
 
 		<section id="page_accueil"> <!-- Page d'accueil -->
             <header> <!-- Logo + nav barre -->
-                <img src="assets/images/icone/logo.svg" alt="Logo du musée d'Aquitaine">
+                <a href="index.html" class="link_logo"><img src="assets/images/icone/logo.svg" alt="Logo du musée d'Aquitaine"></a>
                 <nav> <!-- Barre de navigation -->
                     <ul>
                         <li><a href="#">Expositions<span></span></a></li>
@@ -60,6 +60,16 @@
                         <li><a href="#">Collections<span></span></a></li>
                         <li><a href="#">Boutique<span></span></a></li>
                     </ul>
+                    <div class="hamburger not_cross"><a href="#"><img src="assets/images/icone/hamburger.svg" alt="Logo du musée d'Aquitaine"></a></div>
+                    <div class="mobile_menu">
+                        <ul>
+                            <li><a href="#">Expositions<span></span></a></li>
+                            <li><a href="#">Visites et activités<span></span></a></li>
+                            <li><a href="#">Collections<span></span></a></li>
+                            <li><a href="#">Boutique<span></span></a></li>
+                        </ul>                        
+                        <div class="hamburger cross"><a href="#"><img src="assets/images/icone/cross.svg" alt="Logo du musée d'Aquitaine"></a></div>
+                    </div>
                 </nav>
             </header>
 
@@ -79,6 +89,8 @@
 
                 <span id="slide_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
             </div>
+            
+            <a href="#affiche"><img src="assets/images/icone/arrow_down.svg" alt="Flèche pour scroll" class="arrow_down"></a>
         </section>
 
 
@@ -112,7 +124,7 @@
         </section>
 
 
-        <section> <!-- Agenda -->
+        <section id="agenda"> <!-- Agenda -->
             <div> <!-- Date de navigation -->
 
             </div>
@@ -145,12 +157,10 @@
             		<div><p>Du Mardi au vendredi</p></div>
             		<div><p>9:00 - 12:30<br>13:30 - 17:00 </p></div>
             	</div>
-            	<div class="bouton">
-            		<div class="border_bouton"><a href="" class="lien_bouton">Infos pratiques<i class="fas fa-arrow-right"></i></a></div>
-            	</div>
-            	<br>
+            	<div class="bouton bouton_1" style="padding-bottom: 100px;" >
+            		<div class="border_bouton" ><a href="" class="lien_bouton">Infos pratiques<i class="fas fa-arrow-right" style="padding-left: 30px;"></i></a></div>
+                </div>
             </aside>
-
             <section class="pied_de_page"> <!-- Pied de page -->
             	<div>
             		<br>
@@ -159,12 +169,12 @@
 	            		<img src="assets/images/footer_images/logo.png" width="362" height="218,76">
 		            		<div class="icones_pied_de_page">
 		            			<ul class="liste_icone">
-		            				<li class="border"><a href="" class="liens"><i class="fab fa-facebook-f" class="icone"></i></a></li>
+		            				<li class="border"><a href="" class="liens"><i class="fab fa-facebook-f" class="icone" style="padding-left: 5px; padding-bottom: 8px;"></i></a></li>
 		            				<li class="border"><a href="" class="liens"><i class="fab fa-twitter" class="icone"></i></a></li>
-		            				<li class="border"><a href="" class="liens"><i class="fab fa-pinterest-p" class="icone"></i></a></li>
-		            				<li class="border"><a href="" class="liens"><i class="fab fa-instagram" class="icone"></i></a></li>
-		            				<li class="border"><a href="" class="liens"><i class="fa fa-rss" class="icone"></i></a></li>
-		            				<li class="border"><a href="" class="liens"><i class="fab fa-youtube" class="icone"></i></a></li>
+		            				<li class="border"><a href="" class="liens"><i class="fab fa-pinterest-p" class="icone" style="padding-left: 3px;" ></i></a></li>
+		            				<li class="border"><a href="" class="liens"><i class="fab fa-instagram" class="icone" style="padding-left: 1px;" ></i></a></li>
+		            				<li class="border"><a href="" class="liens"><i class="fa fa-rss" class="icone" style="padding-left: 3;" ></i></a></li>
+		            				<li class="border"><a href="" class="liens"><i class="fab fa-youtube" class="icone" style="padding-right:4px;" ></i></a></li>
 		            			</ul>
 		            		</div>
             		</div>
@@ -176,22 +186,37 @@
                             <li class="liste_ligne"><a href="" class="liste_lien">Boutique</a></li>
                         </ul>
                     </div>
-                    <div class="bouton" >
-                        <div class="border_bouton" ><a href="" class="lien_bouton_2">Nous écrire<i class="fas fa-arrow-right"></i></a></div>
+                    <div class="contact">
+                        <p class="contact_titre" style="padding-left: 1100px;" >Contact</p>
+                        <div class="bouton" >
+                            <div class="border_bouton" ><a href="" class="lien_bouton_2"  >Nous écrire<i class="fas fa-arrow-right" style="padding-left: 30px;"></i></a></div>
+                        </div>
                     </div>
+<<<<<<< HEAD
 
             		<div>
             			<br>
             		</div>
 
+=======
+                    <div>
+                        <p style="margin-bottom: 0px;" ><br></p>
+                    </div>
+                    <div class="mentions_legales">
+                            <ul class="mentions_legales_liste" >
+                                <li class="mentions_legales_lignes" >Credits   </li>
+                                <li class="mentions_legales_lignes" >Mentions Legales  </li>
+                                <li class="mentions_legales_lignes" >Plant du site   </li>
+                            </ul>
+                    </div>	
+>>>>>>> a713cee32106fbc755bcf2af937a82b1b2f0fd00
             </section>
-            <div class="mentions_legales">
-
-            </div>
+            
         </footer>
 
         <script src="assets/js/slideshow_page_accueil.js"></script>
         <script src="assets/js/arrow_animation.js"></script>
+        <script src="assets/js/menu.js"></script>
 
 	</body>
 

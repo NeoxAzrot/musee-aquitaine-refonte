@@ -10,7 +10,11 @@
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 35px;
-	font-color:#0E0E0E;
+	color:#0E0E0E;
+}
+.pied_de_page{
+	width: 100vw;
+	height: 100vh;
 }
 .text_horaire{
 	display: flex;
@@ -37,20 +41,24 @@
 	color: #F9F9F9;
 	display: inline;
 	font-size: 30px;
-	border:2px solid #F9F9F9;
+	border:2px solid #75B2B5;
 	padding: 20px;
 }
 
 .border_bouton{
-		padding-left: 1250px;
-		margin-bottom: 120px;
+		padding-left: 50px;
+
+}
+.bouton_1{
+	padding-left: 1100px;
 }
 .fermer{
-	color:red;
+	color:#EE3831;
 }
 .liens{
 	text-decoration-line: none;
 	color: #F9F9F9;
+
 }
 .icone{
 	color: #F9F9F9;
@@ -92,17 +100,56 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .liste{
 	list-style: none;
 	padding-left: 200px;
 	margin-top: 40px;
 	
 }
+
 .liste_ligne{
-	margin-top: 45px;
+	margin-top: 50px;
 }
+
 .liste_lien{
 	text-decoration: none;
 	color: #F9F9F9;
-	font-size: 25px;
+	font-size: 35px;
+}
+
+.contact{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.contact_titre{
+	color: #F9F9F9;
+	margin: 0px;
+	font-size: 35px;
+}
+
+.bouton{
+	align-content: center;
+}
+
+.mentions_legales{
+	background-color: #1E1E1E;
+	display: flex;
+	align-content: flex-end;
+}
+
+.mentions_legales_liste{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	color: #F9F9F9;
+}
+
+.mentions_legales_lignes{
+
+	margin: 50px;
+	margin-left: 20px;
+	font-size: 20px;
 }
