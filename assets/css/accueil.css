@@ -5,14 +5,14 @@
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Cormorant SC', serif;
-    margin-right: 101px;
+    margin-right: 10%;
 }
 
 #page_accueil header nav ul a
 {
     color: #f9f9f9;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: 400;
 }
 
@@ -33,13 +33,101 @@
 #page_accueil header nav
 {
     width: 100%;
-    margin-left: 80px;
+    margin-left: 10%;
 }
 
 #page_accueil header img{
-    margin-left: 101px;
-    width: 272px;
+    width: 150%;
+    min-width: 80px;
+    min-height: 200px !important;
     height: auto;
+}
+
+#page_accueil header .link_logo
+{
+    margin-left: 101px;
+}
+
+#page_accueil .hamburger
+{
+    display: none;
+    text-align: right;
+    margin-right: 101px;
+}
+
+#page_accueil .hamburger img
+{
+    width: 50px !important;
+    color: #f9f9f9;
+    min-width: 0;
+    min-height: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    #page_accueil .all_button
+    {
+        display: none !important;
+    }
+
+    #page_accueil nav ul
+    {
+        display: none !important;
+    }
+
+    #page_accueil .hamburger.not_cross
+    {
+        display: block;
+    }
+
+    #page_accueil .arrow_down
+    {
+        display: block !important;
+    }
+
+    #page_accueil .title
+    {
+        font-size: 40px !important;
+        transform: translateY(100%) !important;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    #page_accueil header .link_logo
+    {
+        margin-left: 50px;
+    }
+    
+    #page_accueil header nav ul
+    {
+        margin-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    #page_accueil header nav ul a
+    {
+        font-size: 2.2vw;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    #page_accueil header img
+    {
+        width: 200px;
+    }
+
+    #page_accueil header .link_logo
+    {
+        margin-left: 60px;
+    }
+
 }
 
 #page_accueil header nav ul span
@@ -260,16 +348,104 @@
 {
     color: #f9f9f9;
     font-family: 'Cormorant SC', serif;
-    font-size: 100px;
+    font-size: 6vw;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     margin-left: 20%;
     margin-top: 0;
-    transform: translateY(50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
 }
 
 #page_accueil .aquitaine
 {
-    margin-left: 180px;
+    margin-left: 35%;
+}
+
+@media screen and (max-width: 680px) {
+
+    #page_accueil .arrow
+    {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #page_accueil .fa-chevron-left, #page_accueil .fa-chevron-right
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+#page_accueil .arrow_down
+{
+    width: 75px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 40px;
+    transform: translateX(-50%);
+    display: none;
+    animation: infinite 1s ease fleche;
+}
+
+@keyframes fleche {
+    0%{
+        margin-bottom: 40px;
+    }
+    75%{
+        margin-bottom: 25px;
+    }
+    100%{
+        margin-bottom: 40px;
+    }
+}
+
+#page_accueil header .mobile_menu
+{
+    width: 100vw;
+    height: 100vh;
+    background: #0e0e0e;
+    z-index: 5;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: 0.7s ease;
+}
+
+#page_accueil header .show
+{
+    left: 0;
+}
+
+#page_accueil header .mobile_menu ul
+{
+    color: #f9f9f9;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 80%;
+    padding: 0;
+}
+
+#page_accueil header .mobile_menu ul li a
+{
+    font-size: 5vw;
+}
+
+#page_accueil header .mobile_menu ul li
+{
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }

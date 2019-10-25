@@ -51,7 +51,7 @@
 
 		<section id="page_accueil"> <!-- Page d'accueil -->
             <header> <!-- Logo + nav barre -->
-                <img src="assets/images/icone/logo.svg" alt="Logo du musée d'Aquitaine">
+                <a href="index.html" class="link_logo"><img src="assets/images/icone/logo.svg" alt="Logo du musée d'Aquitaine"></a>
                 <nav> <!-- Barre de navigation -->
                     <ul>
                         <li><a href="#">Expositions<span></span></a></li>
@@ -59,6 +59,16 @@
                         <li><a href="#">Collections<span></span></a></li>
                         <li><a href="#">Boutique<span></span></a></li>
                     </ul>
+                    <div class="hamburger not_cross"><a href="#"><img src="assets/images/icone/hamburger.svg" alt="Logo du musée d'Aquitaine"></a></div>
+                    <div class="mobile_menu">
+                        <ul>
+                            <li><a href="#">Expositions<span></span></a></li>
+                            <li><a href="#">Visites et activités<span></span></a></li>
+                            <li><a href="#">Collections<span></span></a></li>
+                            <li><a href="#">Boutique<span></span></a></li>
+                        </ul>                        
+                        <div class="hamburger cross"><a href="#"><img src="assets/images/icone/cross.svg" alt="Logo du musée d'Aquitaine"></a></div>
+                    </div>
                 </nav>
             </header>
 
@@ -78,6 +88,8 @@
 
                 <span id="slide_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
             </div>
+            
+            <a href="#affiche"><img src="assets/images/icone/arrow_down.svg" alt="Flèche pour scroll" class="arrow_down"></a>
         </section>
 
 
@@ -103,7 +115,7 @@
         </section>
 
 
-        <section> <!-- Agenda -->
+        <section id="agenda"> <!-- Agenda -->
             <div> <!-- Date de navigation -->
 
             </div>
@@ -186,6 +198,7 @@
 
         <script src="assets/js/slideshow_page_accueil.js"></script>
         <script src="assets/js/arrow_animation.js"></script>
+        <script src="assets/js/menu.js"></script>
 
 	</body>
 
