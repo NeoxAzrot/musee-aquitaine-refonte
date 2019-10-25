@@ -26,30 +26,35 @@ body{
 }
 
 .prehistoire{
-  width: 20%;
+  width: 40%;
     height: 15%;
 
 }
 
 .antiquite{
-  width: 20%;
+  width: 40%;
   height: 15%;
 }
 
 .XVIIIe{
-  width: 20%;
+  width: 40%;
   height: 5%;
 }
 
 .XXIe{
-  width: 20%;
+  width: 40%;
   height: 15%;
 }
 
 .images_diff_collec{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
 
+.collec_perm h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #F9F9F9;
+  font-weight: normal;
 }
