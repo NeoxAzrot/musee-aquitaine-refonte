@@ -1,0 +1,55 @@
+.img_blue{ 
+	position: absolute;
+	 left: 104px;
+	 top: 899px;}
+.img_black{
+	position: absolute;
+	z-index: 100000;
+	left: 187px;
+	top: 835px;}
+
+.title_contenu{
+	font font-weight: lighter;
+	font-size: 50px;
+	color: #707070;
+	margin-top: 0;
+	font-family:"Cormorant SC", serif; 
+	text-align: center;
+	padding-top: 70px;
+	left: 380px;}
+
+.explications{
+	margin-top: 100px;
+	margin-left: 800px;
+	padding-right: 50px;
+	color: #707070;
+	font-family: "Montserrat" , serif;
+	top: 900px;}
+
+.title_expo_surf{
+	margin-left: 30px;
+	color: #75B2B5;						
+margin-top: 0}
+
+.horaire_expo_surf{
+	padding-right: 50px;
+	color: #707070;
+margin-top: 0}
+
+.en_savoir_plus{
+	padding-right: 50px;
+	color: #707070;
+	margin-top: 0}
+
+.backround_expo{ 
+	background-color: #F9F9F9;	
+	width: 100vw;
+	height: 100vh;}
+
+.big_title_surf{
+	margin-top: 0}
+
+	.ecrit_montserrat{
+		text-align: center;
+		margin-left: 800px;
+		font-family: "Montserrat" , serif;}
