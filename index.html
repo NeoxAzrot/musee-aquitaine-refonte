@@ -51,16 +51,29 @@
                 <img src="assets/images/icone/logo.svg" alt="Logo du musée d'Aquitaine">
                 <nav> <!-- Barre de navigation -->
                     <ul>
-                        <li><a href="#">Expositions</a><span></span></li>
-                        <li><a href="#">Visites et activités</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Boutique</a></li>
+                        <li><a href="#">Expositions<span></span></a></li>
+                        <li><a href="#">Visites et activités<span></span></a></li>
+                        <li><a href="#">Collections<span></span></a></li>
+                        <li><a href="#">Boutique<span></span></a></li>
                     </ul>
                 </nav>
             </header>
 
-            <div> <!-- Slideshow -->
-                
+            <div id="slideshow_home"> <!-- Slideshow -->
+                <h1 class="title"><span class="musee">Musée</span> <span class="aquitaine">d'aquitaine</span></h1>
+                <div class="opaque"></div>
+
+                <span id="slide_left" class="arrow"><i class="fas fa-chevron-left"></i></span>
+
+                <div class="slide slide1"></div>
+                <div class="slide slide2"></div>
+                <div class="slide slide3"></div>
+                <div class="slide slide4"></div>
+                <div class="slide slide5"></div>
+
+                <div class="all_button"></div>
+
+                <span id="slide_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
             </div>
         </section>
 
@@ -110,6 +123,9 @@
 
             </section>
         </footer>
+
+        <script src="assets/js/slideshow_page_accueil.js"></script>
+        <script src="assets/js/arrow_animation.js"></script>
 
 	</body>
 
