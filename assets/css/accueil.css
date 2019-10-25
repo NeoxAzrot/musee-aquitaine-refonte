@@ -48,9 +48,13 @@
     margin-left: 101px;
 }
 
+#page_accueil .not_cross
+{
+    display: none !important;
+}
+
 #page_accueil .hamburger
 {
-    display: none;
     text-align: right;
     margin-right: 101px;
 }
@@ -75,9 +79,9 @@
         display: none !important;
     }
 
-    #page_accueil .hamburger.not_cross
+    #page_accueil .hamburger
     {
-        display: block;
+        display: block !important;
     }
 
     #page_accueil .arrow_down
