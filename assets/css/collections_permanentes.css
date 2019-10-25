@@ -55,12 +55,6 @@ body{
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
-
-
-}
-
-.collec_perm_deux{
-
 }
 
 .collec_perm_image_contener{
@@ -68,4 +62,14 @@ body{
   margin: auto;
   position: relative;
   z-index: 999;
+}
+.collec_perm_image_contener h2{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align:left;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 29px;
+  font-weight:bold;
 }
