@@ -1,11 +1,237 @@
 #agenda
 {
     width: 100vw;
-    height: 100vh;
+    height: 115vh;
     background: #f9f9f9;
+    padding-top: 10px;
+    position: relative;
 }
 
-h2
+#agenda .titre
 {
-    
+    text-align: center;
+    display: block;
+}
+
+#agenda h2
+{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: #8f8787;
+    display: inline-block;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#agenda h2 span
+{
+    width: 100%;
+    height: 2px;
+    background-color: #8f8787;
+    display: block;
+    margin-top: 8px;
+    transform: translateX(100px);
+}
+
+#agenda #date_exposition
+{
+    color: #75B2B5;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#agenda #agenda_left
+{
+    left: 50px;
+}
+
+#agenda #agenda_right
+{
+    right: 50px;
+}
+
+#agenda .arrow_down
+{
+    display: block !important;
+}
+
+#agenda .arrow
+{
+    font-size: 25px;
+    color: #8f8787;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 1px solid #8f8787;
+    padding: 15px;
+}
+
+#agenda .arrow:hover
+{
+    cursor: pointer;
+}
+
+#agenda .fa-chevron-left, #agenda .fa-chevron-right
+{
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+.ricochet_agenda_left
+{
+    cursor: pointer;
+    animation: 0.8s ease ricochet_agenda_left;
+}
+
+@keyframes ricochet_agenda_left
+{
+    0%{
+        left: 50px
+    }
+    15%{
+        left: 35px;
+    }
+    40%{
+        left: 50px;
+    }
+    75%{
+        left: 40px;
+    }
+    100%{
+        left: 50px;
+    }
+}
+
+.ricochet_agenda_right
+{
+    cursor: pointer;
+    animation: 0.8s ease ricochet_agenda_right;
+}
+
+@keyframes ricochet_agenda_right
+{
+    0%{
+        right: 50px
+    }
+    15%{
+        right: 35px;
+    }
+    40%{
+        right: 50px;
+    }
+    75%{
+        right: 40px;
+    }
+    100%{
+        right: 50px;
+    }
+}
+
+#agenda .button_agenda i
+{
+    font-size: 25px;
+    color: #8f8787;
+}
+
+#agenda .button_agenda
+{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #00838F;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #757575;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#agenda .button_agenda::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #00838F;
+    z-index: -1;
+}
+
+#agenda .button_agenda:hover::after
+{
+    left: 0;
+    color: #f9f9f9;
+    animation: animation_button ease 1s;
+}
+
+#agenda .button_agenda:hover, #agenda .button_agenda:hover i
+{
+    color: #f9f9f9;
+}
+
+@keyframes animation_button {
+    0%{
+        left: -100%;
+    }
+    60%{
+        left: 30%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+#agenda .container_button_agenda
+{
+    width: 33%;
+}
+
+#agenda .button_agenda p
+{
+    margin: 0;
+}
+
+#agenda h3
+{
+    margin-top: 15px;
+    width: 33%;
+    margin-left: 33%;
+}
+
+#agenda .titre_agenda_slider
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 680px) {
+
+    #agenda .arrow
+    {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #agenda .fa-chevron-left, #agenda .fa-chevron-right
+    {
+        width: 15px;
+        height: 15px;
+    }
+
 }
