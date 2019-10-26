@@ -16,6 +16,9 @@ body{
   font-weight: lighter;
   text-align: center;
 }
+.collec_paragraf{
+  font-size: 30px;
+}
 
 .collec_perm_image{
 
@@ -28,14 +31,6 @@ body{
   background-position: center;
 }
 
-
-.collec_perm_image_XVIIIe{
-}
-
-.collec_perm_image_XXIe{
-
-}
-
 .collec_perm_images{
   display: flex;
   flex-direction: row;
@@ -44,10 +39,13 @@ body{
 
 }
 
-.collec_perm h3{
+.collec_perm_images h3{
   font-family: 'Montserrat', sans-serif;
   color: #F9F9F9;
   font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  
 }
 .collec_perm_une{
   display: flex;
@@ -55,6 +53,7 @@ body{
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .collec_perm_image_contener{
@@ -63,13 +62,55 @@ body{
   position: relative;
   z-index: 999;
 }
-.collec_perm_image_contener h2{
+.collec_perm_image_contener h3{
 
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   text-align:left;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 180px;
   margin-left: 29px;
   font-weight:bold;
 }
+.collec_perm_filtre{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: black;
+  opacity: 0.4;
+}
+
+.collec_lien_bouton{
+	text-decoration:none;
+	color: #0E0E0E;
+	display: inline;
+	font-size: 30px;
+	border:2px solid #0E0E0E;
+	padding: 20px;
+	
+}
+.collec_lien_bouton_2{
+  text-decoration:none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+	color: #F9F9F9;
+	display: inline;
+	font-size: 30px;
+	border:2px solid #75B2B5;
+	padding: 20px;
+}
+
+.collec_border_bouton{
+    padding-left: 450px;
+    padding-top: 300px;
+
+}
+.collec_bouton{
+  position: absolute;
+  align-content: center;
+  z-index: 2000000;
+  
+}
+
