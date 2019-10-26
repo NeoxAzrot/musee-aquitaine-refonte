@@ -14,16 +14,14 @@
 
 	 	<!-- CSS
 	   ================================================== -->
-
 	   <link rel="stylesheet" href="assets/css/footer.css">
-		 		<link rel="stylesheet" href="assets/css/collections_permanentes.css">
-			 <link rel="stylesheet" href="assets/css/style.css">
+	   <link rel="stylesheet" href="assets/css/collections_permanentes.css">
+	   <link rel="stylesheet" href="assets/css/style.css">
        <link rel="stylesheet" href="assets/css/chargement.css">
        <link rel="stylesheet" href="assets/css/accueil.css">
        <link rel="stylesheet" href="assets/css/agenda.css">
+       <link rel="stylesheet" href="assets/css/exposition_affiche.css">
        <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:300,400|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="assets/css/exposition_affiche.css">
 
 	   <!-- script
 	   ================================================== -->
@@ -94,17 +92,14 @@
 
             <a href="#affiche"><img src="assets/images/icone/arrow_down.svg" alt="Flèche pour scroll" class="arrow_down"></a>
         </section>
-<<<<<<< HEAD
-=======
+        
+        
         <section class="backround_expo"> <!-- Exposition à l'affiche -->
 					  <div> <!-- Images -->
         
                 <div class="image_expo_surf">
                     <img class="img_blue" src="assets/images/expo_affiche/img_bleu.jpg"
                      width="550px" height="400px" >
->>>>>>> 83dd2740d48e0ce898c8443bf9489acf2ff06f24
-
-                     
 
                     <img class= "img_black"src="assets/images/expo_affiche/img_noir.jpg"
                     width="550px" height="400px">
@@ -222,13 +217,28 @@
             <div> <!-- Slideshow -->
                 <span id="agenda_left" class="arrow"><i class="fas fa-chevron-left"></i></span>
 
+                <div id="slider_agenda_container">
+                    <div class="slide_agenda visite">
+
+                    </div>
+
+                    <div class="slide_agenda surf">
+
+                    </div>
+
+                    <div class="slide_agenda projection">
+
+                    </div>
+                </div>
+
                 <span id="agenda_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
             </div>
 
-            <div> <!-- Trait de navigation -->
-
+            <div class="slider_input_range"> <!-- Trait de navigation -->
+                <input type="range" min="1" max="3" id="input_range_agenda" value="2">
             </div>
         </section>
+
 
         <footer class="footer">
             <aside class="footer_horaires"> <!-- Horaires -->
@@ -312,7 +322,8 @@
 
         <script src="assets/js/slideshow_page_accueil.js"></script>
         <script src="assets/js/arrow_animation.js"></script>
-        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/menu.js"></script>   
+        <script src="assets/js/slider_agenda.js"></script>
 
 	</body>
 
