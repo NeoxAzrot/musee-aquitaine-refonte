@@ -6,8 +6,9 @@
 .affiche_title_contenu{
 	text-align: center;
 	padding: 30px;
-	font font-weight: lighter;
-	font-size: 50px;
+	padding-top: 7%;
+	font-weight: lighter;
+	font-size: 70px;
 	color: #707070;
 	margin-top: 0;
 	font-family:"Cormorant SC", serif; 
@@ -24,41 +25,126 @@
 }
 .affiche_img_black{
 	position: absolute;
-	padding-left: 30px ;
+
 	z-index: 300;
+	padding-left: 10vw;
+	
 }
 .affiche_img_bleu{
 	position: absolute;
 	z-index: 200;
+	padding-left: 5vw;
+	padding-top: 5vw;
+	margin-bottom: 7%;
+}
+.affiche_title_expo_surf{
+	color: #75B2B5;		
+	font-family:"Montserrat" ;
+	font-size: 25px;		
+	text-align: center;	
+	padding-left: 17%;	
 }
 
-/*
-.affiche_img_blue{ 
-	position: absolute;
-	 left: 104px;
-	 top: 899px;
-}
-
-.affiche_img_black{
-	position: absolute;
-	z-index: 100000;
-	left: 187px;
-	top: 835px;
-}
 
 .affiche_explications{
 	color: #707070;
 	font-family: "Montserrat" , serif;
-}
-
-.affiche_title_expo_surf{
-	color: #75B2B5;						
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 20%;
 }
 
 .affiche_horaire_expo_surf{
 	color: #707070;
+	text-align: center;
+	padding-left: 17%;
 }
-*/
 
+.affiche_lien_bouton{
+	text-decoration:none;
+	color: #0E0E0E;
+	display: inline;
+	font-size: 30px;
+	border:2px solid #0E0E0E;
+	padding: 20px;
+	z-index: 3;
+	
+}
+.affiche_lien_bouton_2{
+  text-decoration:none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+	color: #707070;
+	display: inline;
+	font-size: 30px;
+	border:2px solid #75B2B5;
+	padding: 20px;
+	z-index: 3;
+}
+
+.affiche_border_bouton{
+    padding-left: 20vw;
+	padding-top: 10vw; 
+	z-index: 3;
+
+}
+.affiche_bouton{
+  position: absolute;
+  align-content: center;
+  z-index: 3;
+  
+}
+@media screen and (max-width: 800px) {
+
+    #affiche .affiche_contener
+    {
+        display: inline;
+    }
+
+    #affiche .affiche_partie_texte
+    {
+		text-align: center;
+		margin-left: 17% ;
+		padding: 0%;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    #affiche 
+    {
+       
+    }
+    
+    #affiche 
+    {
+        
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    #affiche
+    {
+       
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    #affiche .affiche_contener
+    {
+		display: inline;
+    }
+
+    #affiche 
+    {
+       
+    }
+
+}
 
 
