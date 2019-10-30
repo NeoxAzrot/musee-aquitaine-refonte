@@ -130,16 +130,12 @@ body{
   height: 100%;
 }
 
-.collec_border_bouton{
-    padding-left: 25vw;
-    padding-top: 40%;
-
-}
 .collec_bouton{
   position: absolute;
   align-content: center;
   z-index: 2000000;
   bottom: 25px;
+  right: 25px;
   
 }
 .collec_name h3{
