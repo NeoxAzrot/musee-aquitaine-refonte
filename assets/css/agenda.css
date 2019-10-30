@@ -226,6 +226,7 @@
     left: 50%;
     transform: translateX(-50%);
     transition: 0.4s;
+    width: 100%;
 }
 
 #agenda #date_exposition .now
@@ -441,4 +442,69 @@
 #agenda .slide_agenda .more_info:hover
 {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+
+    #agenda .titre_agenda_slider
+    {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #agenda #date_exposition
+    {
+        margin-left: 0;
+    }
+
+    #agenda .button_agenda
+    {
+        width: 100%;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    #agenda #date_exposition
+    {
+        font-size: 22px;
+    }
+
+    #agenda .button_agenda
+    {
+        width: 100%;
+        height: 40px;
+    }
+
+    #agenda .slide_agenda
+    {
+        width: 350px
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    #agenda #date_exposition
+    {
+        font-size: 20px;
+    }
+
+    #agenda .slide_agenda
+    {
+        width: 300px
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    #agenda #date_exposition
+    {
+        font-size: 18px;
+    }
+
 }
