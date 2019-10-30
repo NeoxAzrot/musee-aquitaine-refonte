@@ -1,17 +1,27 @@
 var slide_actual;
-var slide_order;
 var duration = 7000;
 var autoUpdateInterval;
 
+var tab_slide = [
+    'assets/images/slideshow_home/slide_1.jpg',
+    'assets/images/slideshow_home/slide_2.jpg',
+    'assets/images/slideshow_home/slide_3.jpg',
+    'assets/images/slideshow_home/slide_4.jpg',
+    'assets/images/slideshow_home/slide_5.jpg'
+]
+
 
 function lancement() {
-    slide_order = $(".slide");
+    for(var i = 1; i < tab_slide.length + 1; i++) {
+        jQuery($(".all_slide")).append('<div class="slide slide' +i+ '"></div>');
+        $('.slide' + i).css("background-image", "url("+tab_slide[i-1]+")");
+    }
 
-    for(var i = 0; i < slide_order.length; i++) {
+    for(var i = 0; i < tab_slide.length; i++) {
         jQuery($(".all_button")).append('<span class=button onclick=buttonClick(' +i+ ')></span>');
     }
 
-    slide_actual = Math.ceil(slide_order.length/2) - 1;
+    slide_actual = Math.ceil(tab_slide.length/2) - 1;
 
     $(".button").eq(slide_actual).addClass("active");
 
@@ -35,7 +45,7 @@ function buttonClick(index) {
 $("#slide_left").click(function() {
     if(slide_actual == 0) {
         $(".slide").eq(4).addClass("left");
-        slide_actual = slide_order.length - 1;
+        slide_actual = tab_slide.length - 1;
         $(".button").eq(0).removeClass("active");
         $(".button").eq(slide_actual).addClass("active");
     } else {
@@ -50,9 +60,9 @@ $("#slide_left").click(function() {
 
 
 $("#slide_right").click(function() {
-    if(slide_actual == slide_order.length - 1) {
+    if(slide_actual == tab_slide.length - 1) {
         slide_actual = 0;
-        $(".button").eq(slide_order.length - 1).removeClass("active");
+        $(".button").eq(tab_slide.length - 1).removeClass("active");
         $(".button").eq(0).addClass("active");
     } else {
         $(".button").eq(slide_actual).removeClass("active");
@@ -66,7 +76,7 @@ $("#slide_right").click(function() {
 
 
 function update() {
-    for(var i = 0; i < slide_order.length; i++) {
+    for(var i = 0; i < tab_slide.length; i++) {
         if(i > slide_actual) {
             $(".slide").eq(i).addClass("right");
             $(".slide").eq(i).removeClass("left");
@@ -83,9 +93,9 @@ function update() {
 
 
 function autoUpdate() {
-    if(slide_actual == slide_order.length - 1){
+    if(slide_actual == tab_slide.length - 1){
         slide_actual = 0;
-        $(".button").eq(slide_order.length - 1).removeClass("active");
+        $(".button").eq(tab_slide.length - 1).removeClass("active");
         $(".button").eq(0).addClass("active");
     } else {
         $(".button").eq(slide_actual).removeClass("active");

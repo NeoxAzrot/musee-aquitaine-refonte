@@ -174,31 +174,6 @@
     transition: 2s left ease;
 }
 
-#page_accueil .slide1
-{
-    background-image: url(../images/slideshow_home/slide_1.jpg);
-}
-
-#page_accueil .slide2
-{
-    background-image: url(../images/slideshow_home/slide_2.jpg);
-}
-
-#page_accueil .slide3
-{
-    background-image: url(../images/slideshow_home/slide_3.jpg);
-}
-
-#page_accueil .slide4
-{
-    background-image: url(../images/slideshow_home/slide_4.jpg);
-}
-
-#page_accueil .slide5
-{
-    background-image: url(../images/slideshow_home/slide_5.jpg);
-}
-
 #page_accueil .button
 {
     height: 10px;
