@@ -22,12 +22,14 @@
        <link rel="stylesheet" href="assets/css/agenda.css">
        <link rel="stylesheet" href="assets/css/exposition_affiche.css">
        <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:300,400|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	   <!-- script
 	   ================================================== -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="assets/js/chargement.js"></script>
         <script src="https://kit.fontawesome.com/f69c2bce58.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	   <!-- favicons
 		================================================== -->
@@ -92,22 +94,24 @@
         
         <section class="affiche_backround_expo" id="affiche"> <!-- Exposition à l'affiche -->
             <div class="affiche_big_title_surf" style="margin-top: 0px;">
-                <h2 class="affiche_title_contenu">Exposition à l'affiche<span></span></h2>
+                <div class="titre">
+                    <h2 class="affiche_title_contenu" data-aos="fade-right">Exposition à l'affiche<span></span></h2>
+                </div>
             </div>
             <div class="affiche_contener">
                  <div class="affiche_partie_image" >
                     <div class="affiche_img">
-                        <img src="assets/images/expo_affiche/img_bleu.jpg" alt="fond bleu"  width="47%" height="50%" class="affiche_img_bleu">
-                        <img src="assets/images/expo_affiche/img_noir.jpg" alt="surfeur" width="47%" height="50%" class="affiche_img_black">
+                        <img src="assets/images/expo_affiche/img_bleu.jpg" alt="fond bleu"  width="47%" height="50%" class="affiche_img_bleu" data-aos="zoom-in">
+                        <img src="assets/images/expo_affiche/img_noir.jpg" alt="surfeur" width="47%" height="50%" class="affiche_img_black" data-aos="zoom-in">
                     </div>
                  </div>
-                 <div class="affiche_partie_texte" >
+                 <div class="affiche_partie_texte" data-aos="fade-left">
                      <div class="affiche_ecriture">
                         <h3 class="affiche_title_expo_surf">La déferlante du surf</h3>
                         <h4 class="affiche_horaire_expo_surf">Jusqu'au 5 janvier 2020</h4>
                         <p class="affiche_explications">Plongez dans la « culture surf » et découvrez ce phénomène mondial qui a pénétré l'Europe par l'Aquitaine à la fin des années 1950. Au-delà de la pratique sportive, le surf - emblème de liberté - tire ses origines d'un imaginaire collectif et fantasmé, associé à la nature, la beauté et la jeunesse.</p>
                     </div>
-                        <div class="affiche_bouton" >
+                        <div class="affiche_bouton" data-aos="fade-right">
                             <div class="affiche_border_bouton" ><a href="" class="affiche_lien_bouton_2"  >En savoir plus <i class="fas fa-arrow-right" style="padding-left: 30px;"></i></a></div>
                         </div>
                 </div>
@@ -115,10 +119,12 @@
     </section>
 
 
-        <section class="collec_perm_general"> <!-- Collections permanentes -->
-					<h2>Les collections permanentes<span></span></h2>
+        <section class="collec_perm_general" id="collections"> <!-- Collections permanentes -->
+            <div class="titre">
+                    <h2 data-aos="fade-right">Les collections permanentes<span></span></h2>
+            </div>
 
-						<div class="collec_paragraf"> <!-- Texte -->
+						<div class="collec_paragraf" data-aos="zoom-in"> <!-- Texte -->
 							<p>Grâce à la richesse et à la variété de ses collections, le musée d'Aquitaine invite le visiteur à <br>
 								partir à la découverte de l'histoire régionale. Elle retrace le file de l’histoire Bordelaise de la <br>
 								préhistoire, aux passée portuaire de la ville au 16 siècle,  à l'époque contemporaine, passant <br>
@@ -129,7 +135,7 @@
             <div class="collec_perm_images"> <!-- Différentes collections -->
 							<div class="collec_perm_image_contener">
 								<div class="collec_perm_une">
-                                    <div class="collec_perm_image"style="background-image: url('assets/images/images_collec/prehistoire.jpg')">
+                                    <div data-aos="flip-left" class="collec_perm_image"style="background-image: url('assets/images/images_collec/prehistoire.jpg')">
                                         <a href="collections.html" style="text-decoration: none;">
                                         <div class="collec_perm_filtre"></div>
                                         <div class="collec_name"><h3>Préhistoire et protohistoire</h3>
@@ -140,7 +146,7 @@
                                         </a>	
 									</div>
 
-									<div class="collec_perm_image"style="background-image: url('assets/images/images_collec/antiquite.jpg')">
+									<div data-aos="flip-left" class="collec_perm_image"style="background-image: url('assets/images/images_collec/antiquite.jpg')">
                                         <a href="collections.html" style="text-decoration: none;">
                                             <div class="collec_perm_filtre"></div>
                                             <div class="collec_name">
@@ -156,7 +162,7 @@
 								</div>
 
 									<div class="collec_perm_une">
-										<div class="collec_perm_image"style="background-image: url('assets/images/images_collec/18es.jpg')">
+										<div data-aos="flip-left" class="collec_perm_image"style="background-image: url('assets/images/images_collec/18es.jpg')">
                                             <a href="collections.html" style="text-decoration: none;">
                                                 <div class="collec_perm_filtre"></div>
                                                 <div class="collec_name">
@@ -170,7 +176,7 @@
                                             </a>
 										</div>
 
-										<div class="collec_perm_image"style="background-image: url('assets/images/images_collec/bordeaux_21.jpg')">
+										<div data-aos="flip-left" class="collec_perm_image"style="background-image: url('assets/images/images_collec/bordeaux_21.jpg')">
                                             <a href="collections.html" style="text-decoration: none;">
                                                 <div class="collec_perm_filtre"></div>
                                                 <div class="collec_name">
@@ -192,14 +198,14 @@
 
         <section id="agenda"> <!-- Agenda -->
             <div class="titre">
-                <h2>Agenda<span></span></h2>
+                <h2 data-aos="fade-right">Agenda<span></span></h2>
             </div>
 
             <div class="titre_agenda_slider"> <!-- Date de navigation -->
 
-                <ul id="date_exposition"></ul>
+                <ul id="date_exposition" data-aos="fade-up"></ul>
 
-                <div class="container_button_agenda">
+                <div class="container_button_agenda" data-aos="fade-right">
                     <div class="button_agenda">
                         <p>Calendrier</p>
                         <i class="fas fa-calendar-alt"></i>
@@ -208,14 +214,14 @@
             </div>
 
             <div> <!-- Slideshow -->
-                <span id="agenda_left" class="arrow"><i class="fas fa-chevron-left"></i></span>
+                <span id="agenda_left" class="arrow" data-aos="fade-left"><i class="fas fa-chevron-left"></i></span>
 
                 <div id="slider_agenda_container"></div>
 
-                <span id="agenda_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
+                <span id="agenda_right" class="arrow" data-aos="fade-right"><i class="fas fa-chevron-right"></i></span>
             </div>
 
-            <div class="slider_input_range"> <!-- Trait de navigation -->
+            <div class="slider_input_range" data-aos="zoom-in"> <!-- Trait de navigation -->
                 <input type="range" min="1" max="5" id="input_range_agenda" value="3">
             </div>
         </section>
@@ -305,6 +311,11 @@
         <script src="assets/js/arrow_animation.js"></script>
         <script src="assets/js/menu.js"></script>   
         <script src="assets/js/slider_agenda.js"></script>
+
+        
+        <script>
+            AOS.init();
+        </script>
 
 	</body>
 

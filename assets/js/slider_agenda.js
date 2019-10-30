@@ -83,15 +83,15 @@ function lancement_agenda() {
 
       if(tab_agenda[i].date < date_now) {
         jQuery($("#date_exposition")).append('<li class="date_agenda top">'+ tab_agenda[i].date.getDate() + ' / ' + (tab_agenda[i].date.getMonth() + 1)  + ' / ' + tab_agenda[i].date.getFullYear() +'</li>');
-        jQuery($("#slider_agenda_container")).append('<div class="slide_agenda left"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
+        jQuery($("#slider_agenda_container")).append('<div data-aos="flip-left" class="slide_agenda left"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
       } else if(!next_date_find) {
         jQuery($("#date_exposition")).append('<li class="date_agenda now">'+ tab_agenda[i].date.getDate() + ' / ' + (tab_agenda[i].date.getMonth() + 1)  + ' / ' + tab_agenda[i].date.getFullYear() +'</li>');
-        jQuery($("#slider_agenda_container")).append('<div class="slide_agenda active"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
+        jQuery($("#slider_agenda_container")).append('<div data-aos="flip-left" class="slide_agenda active"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
         agenda_actual = i;
         next_date_find = true;
       } else {
         jQuery($("#date_exposition")).append('<li class="date_agenda bottom">'+ tab_agenda[i].date.getDate() + ' / ' + (tab_agenda[i].date.getMonth() + 1)  + ' / ' + tab_agenda[i].date.getFullYear() +'</li>');
-        jQuery($("#slider_agenda_container")).append('<div class="slide_agenda right"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
+        jQuery($("#slider_agenda_container")).append('<div data-aos="flip-left" class="slide_agenda right"><div class="container_text"><h4>'+ tab_agenda[i].titre +'<span></span></h4>'+ horaires + '</div><a href="' + tab_agenda[i].en_savoir_plus +'" class="more_info"><i class="fas fa-plus"></i></a></div>');
       }
 
     }
