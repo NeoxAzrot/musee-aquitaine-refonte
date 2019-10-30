@@ -31,7 +31,7 @@
 	text-decoration:none;
 	color: #0E0E0E;
 	display: inline;
-	font-size: 30px;
+	font-size: 110%;
 	border:2px solid #0E0E0E;
 	padding: 20px;
 	
@@ -40,12 +40,12 @@
 	text-decoration:none;
 	color: #F9F9F9;
 	display: inline;
-	font-size: 30px;
+	font-size: 110%;
 	border:2px solid #75B2B5;
 	padding: 20px;
 }
 .footer_bouton_1_decal{
-	padding-left: 1200px;
+	padding-left: 70vw;
 }
 
 .footer_border_bouton{
@@ -132,6 +132,7 @@
 	color: #F9F9F9;
 	margin: 0px;
 	font-size: 35px;
+	padding-left: 60%;
 }
 
 .footer_bouton{
