@@ -25,9 +25,9 @@
 
 	   <!-- script
 	   ================================================== -->
-        <script src="https://kit.fontawesome.com/f69c2bce58.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="assets/js/chargement.js"></script>
+        <script src="https://kit.fontawesome.com/f69c2bce58.js" crossorigin="anonymous"></script>
 
 	   <!-- favicons
 		================================================== -->
@@ -79,11 +79,7 @@
 
                 <span id="slide_left" class="arrow"><i class="fas fa-chevron-left"></i></span>
 
-                <div class="slide slide1"></div>
-                <div class="slide slide2"></div>
-                <div class="slide slide3"></div>
-                <div class="slide slide4"></div>
-                <div class="slide slide5"></div>
+                <div class="all_slide"></div>
 
                 <div class="all_button"></div>
 
@@ -193,7 +189,7 @@
 
             <div class="titre_agenda_slider"> <!-- Date de navigation -->
 
-                <h3 id="date_exposition">22 / 10 / 2019</h3>
+                <ul id="date_exposition"></ul>
 
                 <div class="container_button_agenda">
                     <div class="button_agenda">
@@ -206,25 +202,13 @@
             <div> <!-- Slideshow -->
                 <span id="agenda_left" class="arrow"><i class="fas fa-chevron-left"></i></span>
 
-                <div id="slider_agenda_container">
-                    <div class="slide_agenda visite">
-
-                    </div>
-
-                    <div class="slide_agenda surf">
-
-                    </div>
-
-                    <div class="slide_agenda projection">
-
-                    </div>
-                </div>
+                <div id="slider_agenda_container"></div>
 
                 <span id="agenda_right" class="arrow"><i class="fas fa-chevron-right"></i></span>
             </div>
 
             <div class="slider_input_range"> <!-- Trait de navigation -->
-                <input type="range" min="1" max="3" id="input_range_agenda" value="2">
+                <input type="range" min="1" max="5" id="input_range_agenda" value="3">
             </div>
         </section>
 
