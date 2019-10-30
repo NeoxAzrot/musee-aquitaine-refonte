@@ -23,7 +23,7 @@
 	margin: 101px;
 	margin-bottom: 0px;
 	margin-top: 30px;
-	font-size: 30px;
+	font-size: 20px;
 	text-decoration-color: #0E0E0E;
 }
 
@@ -118,7 +118,7 @@
 .footer_liste_lien{
 	text-decoration: none;
 	color: #F9F9F9;
-	font-size: 35px;
+	font-size: 25px;
 }
 
 .footer_contact{
@@ -131,7 +131,7 @@
 .footer_contact_titre{
 	color: #F9F9F9;
 	margin: 0px;
-	font-size: 35px;
+	font-size: 25px;
 	padding-left: 60%;
 }
 
@@ -155,10 +155,13 @@
 .footer_mentions_legales_lignes{
 	margin: 30px;
 	margin-left: 20px;
-	font-size: 20px;
+	font-size: 15px;
 	display: block;
 	align-content: center;
 }
 .footer_footer_decal{
 	padding-left: 400px;
+}
+.footer_h2{
+	font-size: 30x;
 }

@@ -96,7 +96,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 	color: #F9F9F9;
-	font-size: 120%;
+	font-size: 25spx;
 	border:2px solid #75B2B5;
   padding: 20px;
   display: table;
@@ -104,8 +104,8 @@ body{
 }
 
 .collec_border_bouton{
-    padding-left: 20vw;
-    padding-top: 17vw;
+    padding-left: 25vw;
+    padding-top: 40%;
 
 }
 .collec_bouton{
