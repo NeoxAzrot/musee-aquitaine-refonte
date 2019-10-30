@@ -82,7 +82,7 @@
   font-weight: bold;
 	color: #707070;
 	display: inline;
-	font-size: 2vw;
+	font-size: 25px;
 	border:2px solid #75B2B5;
 	padding: 20px;
 	z-index: 3;
@@ -90,7 +90,7 @@
 
 .affiche_border_bouton{
     padding-left: 20vw;
-	padding-top: 10vw; 
+	padding-top: 7vw; 
 	z-index: 3;
 
 }
